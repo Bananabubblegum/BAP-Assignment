@@ -78,7 +78,7 @@ print(investor_list)
 
 # Prepare Dataframe
 
-# "\n" new line causes CSV to ignore the delimited characters afterwards, so I replace with blankspace - qy
+# "\n" new line causes CSV to ignore the delimited characters afterwards, so I replaced it with ','  - qy
 investor_list = [item.replace('\n', ',') for item in investor_list]
 
 data = {'Project Name': name_list, 'Funding Round': fund_list, 'Amount Raised': amount_list,
